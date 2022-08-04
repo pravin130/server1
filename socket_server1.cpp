@@ -136,7 +136,7 @@ int main(int argc, char const *argv[]) {
   if (str == "srec")
 {
     fd = fopen("/root/server/server1/bootparam_sa0.srec", "wb");
-    fwrite(buf, sizeof(char), bufsize, fd);
+    fwrite(buf, sizeof(char), 20000, fd);
     fclose(fd);
   }
 
