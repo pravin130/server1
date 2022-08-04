@@ -60,7 +60,7 @@ void accept_connection() {
 }
 
 void size_of_data() {
-  int i = 0;
+  long unsigned int i=0;
   while (buf[i] != '\0') {
     i++;
   }
