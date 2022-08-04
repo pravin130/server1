@@ -17,7 +17,7 @@ char buf[MAXBUFLEN];
 struct sockaddr_in address;
 int opt = 1;
 int addrlen = sizeof(address);
-char buffer[4835] = {0};
+char buffer[20000] = {0};
 char hello[] = "Hello from server";
 FILE *fd;
 
