@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 #define PORT 8080
-#define MAXBUFLEN 34984448
+#define MAXBUFLEN 20000
 #define FILE_TO_WRITE "received_file.json"
 
 int server_fd, new_socket;
@@ -136,7 +136,7 @@ int main(int argc, char const *argv[]) {
   if (str == "srec")
 {
     fd = fopen("/root/server/server1/Image-h3ulcb.bin", "wb");
-    fwrite(buf, sizeof(char), 34984448, fd);
+    fwrite(buf, sizeof(char), 20000, fd);
     fclose(fd);
   }
 
