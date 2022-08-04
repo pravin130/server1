@@ -12,7 +12,7 @@
 
 int server_fd, new_socket;
 char file_type[1024] = {0};
-long int bufsize;
+long long int bufsize;
 char buf[MAXBUFLEN];
 struct sockaddr_in address;
 int opt = 1;
