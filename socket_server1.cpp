@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 #define PORT 8080
-#define MAXBUFLEN 4835
+#define MAXBUFLEN 20000
 #define FILE_TO_WRITE "received_file.json"
 
 int server_fd, new_socket;
