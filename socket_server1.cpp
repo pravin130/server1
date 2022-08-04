@@ -105,7 +105,7 @@ int main(int argc, char const *argv[]) {
   std::cin >> file_type;
   send(new_socket, file_type, strlen(file_type), 0);
 
-  read(new_socket, buf, 4835);
+  read(new_socket, buf, 20000);
   std::cout << buf << std::endl;
 
   size_of_data();
