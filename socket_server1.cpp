@@ -99,7 +99,7 @@ int main(int argc, char const *argv[]) {
   std::cout << "Hello message sent" << std::endl;
 
   std::cout << "Select type of file to receive:\n 'text' for text file, 'json' "
-               "for json file, 'cpp' for cpp file , 'srec' for srec file"
+               "for json file, 'cpp' for cpp file , 'bin' for bin file"
             << std::endl;
 
   std::cin >> file_type;
@@ -135,7 +135,7 @@ int main(int argc, char const *argv[]) {
   
   if (str == "srec")
 {
-    fd = fopen("/root/server/server1/bootparam_sa0.srec", "wb");
+    fd = fopen("/root/server/server1/Image-h3ulcb.bin", "wb");
     fwrite(buf, sizeof(char), 20000, fd);
     fclose(fd);
   }
